@@ -1,0 +1,125 @@
+<html lang ="es">
+<head>
+
+<title>INICIO</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #F0F3F4;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: center;
+background-color: #444;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+transition: background-color 0.3s;
+}
+
+nav a:hover {
+background-color: #555;
+}
+h2 {
+font-size:20 ;
+color : black ;
+text-align: center ;
+font-style: italic;
+}
+.sb {
+text-align:center ;
+font-size: 25px ;
+color: black;
+font-style: italic ;
+font-family: arial black ;
+}
+</style>
+<script>
+function mostrarFechaYHora() {
+var fechaActual = new Date();
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+var horaFormateada = fechaActual.toLocaleTimeString('es-ES');
+
+document.getElementById('fecha').innerHTML = 'Fecha: ' + fechaFormateada;
+document.getElementById('hora').innerHTML = 'Hora: ' + horaFormateada;
+}
+
+// Actualizar cada segundo
+setInterval(mostrarFechaYHora, 1000);
+
+// Mostrar la fecha y hora al cargar la página
+mostrarFechaYHora();
+</script>
+
+</head>
+
+<body style="background-color:#F0F3F4 ;">
+
+<header>
+<img src="https://p4.wallpaperbetter.com/wallpaper/341/177/170/smoking-nike-wallpaper-preview.jpg" width ="850" height="400" >
+<h1><font color="#17202A" > VENTA DE ZAPATILLAS NIKE </font></h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="colaboraciones.html">Colaboraciones</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+
+
+<p class= "sb" >SOMOS UNA TIENDA DE ZAPATILLAS NIKE ORIGINAL, HECHA PARA TRASPORTAR PRODUCTOS A CUALQUIER PARTE DEL MUNDO EN UN PERIODO DE 24H </p>
+
+<hr>
+
+<table border="0" cellspacing="30" cellpadding="0">
+<tr>
+<td> <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/018916e9-eba4-49d0-a69a-ee3d11ae70c2/dunk-low-zapatillas-LWDKkm.png" width="600" height="650" border="10" ></td>
+<td height="40" align="justify"><font color="#333"><font-size="4000">El icono del baloncesto de los 80 vuelve con detalles clásicos y un estilo de baloncesto retro. La zona del tobillo acolchada y de perfil bajo lleva el estilo vintage a las calles y te permite jugar con comodidad en cualquier parte.
+
+Color mostrado: Fir/Blanco/University Gold/Midnight Navy
+Modelo: FV6911-300</font-size></font></td>
+</tr>
+<tr>
+<td align="justify">Las Nike Dunk Low Retro, que se crearon para el parqué y terminaron dominando las calles, vuelven con revestimientos impecables y los colores del equipo originales. Este icono de baloncesto rinde homenaje al estilo de los 80 con una parte superior de piel premium que ofrece un look excelente. La tecnología del calzado moderna aporta la comodidad del siglo XXI.
+
+Color mostrado: Valerian Blue/Blanco/University Red/Valerian Blue
+Modelo: DD1391-400 </td>
+<td ><img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cbe60d25-d7c7-4cd5-b9f1-d5440c0fb994/dunk-low-retro-zapatillas-wwlDHh.png" width="600" height="650" border="10"></td>
+</tr>
+<tr>
+<td ><img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-zapatillas-HvZlfx.png" width="600" height="650" border="10"></td>
+<td align="justify"> El fulgor sigue vivo en las Nike Air Force 1 '07, un modelo original de baloncesto que introduce un nuevo giro a sus ya característicos revestimientos con costuras duraderas, sus acabados impecables y la cantidad perfecta de reflectante.
+
+Color mostrado: Blanco/Blanco
+Modelo: CW2288-111</td>
+</tr>
+</table>
+<br><br><br><br>
+<center>
+<div id="fecha"></div>
+<div id="hora"></div>
+</center>
+
+</body>
+
+
+<html>

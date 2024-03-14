@@ -1,0 +1,123 @@
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #F0F3F4;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: center;
+background-color: #444;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+transition: background-color 0.3s;
+}
+
+nav a:hover {
+background-color: #555;
+}
+h2 {
+font-size:20 ;
+color : black ;
+text-align: center ;
+font-style: italic;
+}
+.sb {
+text-align:center ;
+font-size: 25px ;
+color: #17202A ;
+font-style: italic ;
+font-family: arial black ;
+}
+</style>
+<script>
+function mostrarFechaYHora() {
+var fechaActual = new Date();
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+var horaFormateada = fechaActual.toLocaleTimeString('es-ES');
+
+document.getElementById('fecha').innerHTML = 'Fecha: ' + fechaFormateada;
+document.getElementById('hora').innerHTML = 'Hora: ' + horaFormateada;
+}
+
+// Actualizar cada segundo
+setInterval(mostrarFechaYHora, 1000);
+
+// Mostrar la fecha y hora al cargar la página
+mostrarFechaYHora();
+</script>
+
+
+</head>
+<body style="background-color:#FDFEFE  ;">
+
+
+<header>
+<img src="https://p4.wallpaperbetter.com/wallpaper/341/177/170/smoking-nike-wallpaper-preview.jpg" width ="850" height="400" >
+<h1><font color="#17202A" > VENTA DE ZAPATILLAS NIKE</font></h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="colaboraciones.html">Colaboraciones</a>
+<a href="contacto.html">Contacto</a>
+</nav>
+
+<p class="sb">NUESTRAS COLABORACIONES</p>
+
+<hr>
+<br><br>
+<table cellpadding="10px">
+<tr>
+<td><img src="https://media.revistagq.com/photos/63032d80925bf4b54a3034e4/master/w_1600,c_limit/GQ0922_Nike_04.jpg" width="700" height="500" border="0"></td>
+<td><img src="https://media.revistagq.com/photos/63032d850fea36347fdc549d/master/w_1600,c_limit/GQ0922_Nike_65.jpg" width="600" height="300" border="0"></td>
+</tr>
+
+<tr>
+<td align="justify">Las Air Jordan 1 no son solo las zapatillas más importantes de la historia de Nike; son las zapatillas más importantes, punto. Puede que ahora parezcan simples, pero estas primeras sneakers de MJ revirtieron ellas solas la suerte de Nike a mediados de los 80. Crearon una línea emblemática tan descomunal que derivó en su propia marca, fulminando para siempre la frontera entre el deporte y la moda y alumbrando uno de los modelos más deseados para colaboraciones, de Kim Jones para Dior a Hiroshi Fujiwara para Fragment Design.</td>
+<td align="justify">La primera vez que Tinker Hatfield se sentó a diseñar las zapatillas para Andre Agassi, garabateó en grande, en la parte superior de la página, las palabras “Anti club de campo”. “Andre era diferente”, asegura Hatfield. “Vivía en Las Vegas, por Dios. Para nosotros era un vehículo perfecto para convertir el tenis en un deporte diferente”. </td>
+</tr>
+<tr>
+<td><img src="https://media.revistagq.com/photos/63032d870fea36347fdc549e/master/w_1600,c_limit/GQ0922_Nike_05.jpg" width="600" height="300" </td>
+<td><img src="https://media.revistagq.com/photos/63032d89e5dd9abb1cd22529/master/w_1600,c_limit/GQ0922_Nike_57.jpg" width="600" height="400"></td>
+</tr>
+<tr>
+<td align="justify">Es imposible exagerar lo históricas que fueron —y siguen siendo— las Air Swoopes. Diseñadas para la gran Sheryl Swoopes, de la NBA femenina, son las primeras zapatillas de baloncesto creadas para mujeres, y las primeras en llevar el nombre de una. Cosecharon tanto éxito como para lanzar una secuela igual de popular. Pero además era un modelo realmente bueno, con una tira en el empeine que garantizaba la estabilidad de la parte superior y una paleta de colores llamativos.</td>
+<td align="justify">La primera alianza de Nike con una marca de moda no fue realmente una colaboración. Deseosos de trabajar con el equipo de Stüssy en Reino Unido, Nike ofreció a Michael Koppelman, mandamás de la firma por entonces, la posibilidad de cederles dos colores exclusivos de sus modelos favoritos para su tienda de Londres. Las Stüssy Air Huarache LE fueron tan bien recibidas que se relanzaron de nuevo en 2021, afianzando la larga y fructífera relación entre la compañía de streetwear y la del símbolo de la victoria.</td>
+</tr>
+</table>
+
+
+<br><br><br><br><br><br>
+<center>
+<div id="fecha"></div>
+<div id="hora"></div>
+</center>
+
+
+
+</body>
+
+
+</html>
